@@ -9,7 +9,6 @@ const app = express();
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-//comment
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/form.html");
 });

@@ -4,13 +4,13 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 
-handler=(req,res) => { //function handler(req, res) {
+handler = (req, res) => { //function handler(req, res) {
     if (req.url === "/api" && req.method === "GET") {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain');
         res.end('Welcome to world of Asyn Programming\n');
     }
-    else{
+    else {
         res.end('Invalid Request\n');
     }
 }
